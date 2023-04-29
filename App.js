@@ -51,28 +51,31 @@ export default function App() {
   );
 }
 
+//Styles
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
   post: {
-    width: "100%",
+    backgroundColor: "#fff",
+    marginVertical: 5,
   },
-
   header: {
-    width: "100%",
+    padding: 10,
     flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
   },
-
   profileImage: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
+    borderRadius: 25,
+    marginRight: 10,
   },
-
-  subtitle: {},
-
-  icon: {},
+  name: {
+    fontWeight: "500",
+  },
+  subtitle: {
+    color: "gray",
+  },
+  icon: {
+    marginLeft: "auto",
+  },
 });
