@@ -33,7 +33,7 @@ export default function App() {
             <Text style={styles.name}>{post.User.name}</Text>
             <Text style={styles.subtitle}>{post.createdAt}</Text>
           </View>
-          <Entypo name="dots-three-horizontal" size={24} color="black" />
+          <Entypo name="dots-three-horizontal" size={18} color="grey" />
         </View>
 
         {/* Body */}
