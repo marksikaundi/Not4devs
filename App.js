@@ -22,7 +22,10 @@ export default function App() {
       <View style={styles.post}>
         {/* Header */}
         <View styles={styles.header}>
-          <Image source={{ uri: post.image }} style={styles.profileImage} />
+          <Image source={{ uri: post.User.image }} style={styles.profileImage} />
+          <View>
+            <Text style={styles.name} >Mark</Text>
+          </View>
         </View>
 
         {/* Body */}
