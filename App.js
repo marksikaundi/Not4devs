@@ -62,13 +62,12 @@ const styles = StyleSheet.create({
 
   header: {},
 
-  subtitle: {},
-
-  icon: {},
-
-
   profileImage: {
     width: 50,
     height: 50,
   },
+
+  subtitle: {},
+
+  icon: {},
 });
