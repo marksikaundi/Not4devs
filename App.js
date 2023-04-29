@@ -58,9 +58,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  post: {},
+  post: {
+    width: "100%",
+  },
 
-  header: {},
+  header: {
+    width: "100%",
+    flexDirection: "row",
+  },
 
   profileImage: {
     width: 50,
