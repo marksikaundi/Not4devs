@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 const post = {
   id: "p1",
   createdAt: "19 m",
@@ -21,7 +21,9 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.post}>
         {/* Header */}
-        <View styles={styles.header}></View>
+        <View styles={styles.header}>
+          <Image source={{ uri: post.image }} style={styles.profileImage} />
+        </View>
 
         {/* Body */}
 
@@ -39,5 +41,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  profileImage: {
+    width: 50,
+    height: 50,
   },
 });
