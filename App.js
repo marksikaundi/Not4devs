@@ -58,6 +58,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  post: {},
+
+  header: {},
+
+  subtitle: {},
+
+  icon: {},
+
+
   profileImage: {
     width: 50,
     height: 50,
