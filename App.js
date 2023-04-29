@@ -2,12 +2,12 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 const post = {
   id: "p1",
-  createdAt: "19 m",
+  createdAt: "20 min ago",
   User: {
     id: "u1",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg",
-    name: "Vadim Savin",
+    name: "Mark Sikaundi",
   },
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
@@ -22,9 +22,13 @@ export default function App() {
       <View style={styles.post}>
         {/* Header */}
         <View styles={styles.header}>
-          <Image source={{ uri: post.User.image }} style={styles.profileImage} />
+          <Image
+            source={{ uri: post.User.image }}
+            style={styles.profileImage}
+          />
           <View>
-            <Text style={styles.name} >Mark</Text>
+            <Text style={styles.name}>{post.User.name}</Text>
+            <Text style={styles.subtitle}>{post.createdAt}</Text>
           </View>
         </View>
 
