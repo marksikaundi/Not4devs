@@ -19,7 +19,15 @@ const post = {
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>My first app!</Text>
+      <View style={styles.post}>
+        {/* Header */}
+        <View styles={styles.header}></View>
+
+        {/* Body */}
+
+        {/* Footer */}
+        <View style={styles.footer}></View>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
