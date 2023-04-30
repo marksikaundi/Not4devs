@@ -81,7 +81,11 @@ const styles = StyleSheet.create({
   },
 
   description: {
-    padding: 10,
+    paddingHorizontal: 10,
     lineHeight: 20,
+    letterSpacing: 0.4,
+  },
+  image: {
+
   }
 });
