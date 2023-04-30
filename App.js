@@ -51,7 +51,10 @@ export default function App() {
 
         {/* Footer */}
         <View style={styles.footer}>
-          <Text>Footer</Text>
+          <View style={styles.statsRaw}>
+            <Text style={styles.likedBy}>Elon Musk and {post.numberOfLikes} others</Text>
+          <Text>{post.numberOfShares} shares</Text>
+          </View>
         </View>
       </View>
       <StatusBar style="auto" />
