@@ -42,10 +42,17 @@ export default function App() {
         </View>
 
         {/* Body */}
-        <Text style={styles.description}>{post.description}</Text>
-        <Image source={{ uri: post.image }} style={styles.image} />
+        {post.description && (
+          <Text style={styles.description}>{post.description}</Text>
+        )}
+        {post.image && (
+          <Image source={{ uri: post.image }} style={styles.image} />
+        )}
+
         {/* Footer */}
-        <View style={styles.footer}></View>
+        <View style={styles.footer}>
+          <Text>Footer</Text>
+        </View>
       </View>
       <StatusBar style="auto" />
     </View>
