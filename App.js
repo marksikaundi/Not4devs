@@ -42,7 +42,8 @@ export default function App() {
         </View>
 
         {/* Body */}
-
+        <Text style={styles.description}>{post.description}</Text>
+        <Image source={{ uri: post.image }} style={styles.image} />
         {/* Footer */}
         <View style={styles.footer}></View>
       </View>
@@ -78,4 +79,9 @@ const styles = StyleSheet.create({
   icon: {
     marginLeft: "auto",
   },
+
+  description: {
+    padding: 10,
+    lineHeight: 20,
+  }
 });
