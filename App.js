@@ -57,9 +57,7 @@ export default function App() {
             <Text style={styles.likedBy}>
               Elon Musk and {post.numberOfLikes} others
             </Text>
-            <Text style={styles.shares}>
-              {post.numberOfShares} shares
-            </Text>
+            <Text style={styles.shares}>{post.numberOfShares} shares</Text>
           </View>
         </View>
       </View>
@@ -108,9 +106,21 @@ const styles = StyleSheet.create({
   },
 
   //footer
-  footer: {},
-  statsRaw: {},
-  likeIcon: {},
+  footer: {
+    paddingHorizontal: 10,
+  },
+  statsRaw: {
+    paddingVertical: 10,
+    flexDirection: "row",
+  },
+  likeIcon: {
+    width: 20,
+    height: 20,
+    marginRight: 5,
+  },
   likedBy: {},
-  shares: {},
+  shares: {
+    marginLeft: "auto",
+    color: "grey",
+  },
 });
