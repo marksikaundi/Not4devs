@@ -86,6 +86,8 @@ const styles = StyleSheet.create({
     letterSpacing: 0.4,
   },
   image: {
-
-  }
+    width: "100%",
+    aspectRatio: 1,
+    marginTop: 10,
+  },
 });
