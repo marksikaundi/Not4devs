@@ -53,7 +53,7 @@ export default function App() {
         <View style={styles.footer}>
           <View style={styles.statsRaw}>
             <Text style={styles.likedBy}>Elon Musk and {post.numberOfLikes} others</Text>
-          <Text>{post.numberOfShares} shares</Text>
+          <Text style={styles.numberOfShares}>{post.numberOfShares} shares</Text>
           </View>
         </View>
       </View>
