@@ -7,10 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       
-      <FlatList 
-      data={posts}
-      renderItem={({item}) => <FeedPost post={item}/>}
-      />
+      
     </View>
   );
 }
