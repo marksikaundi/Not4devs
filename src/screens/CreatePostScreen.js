@@ -1,11 +1,18 @@
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Image } from "react-native";
+
+const user = {
+  id: "u1",
+  image:
+    "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg",
+  name: "Mark Sikaundi",
+};
 
 const CreatePostScreen = () => {
   return (
     <View style={StyleSheet.container}>
       <View>
-        <Image />
-        <Text></Text>
+        <Image source={{ uri: user.image }} />
+        <Text>{user.name}</Text>
       </View>
     </View>
   );
