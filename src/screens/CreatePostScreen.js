@@ -8,15 +8,6 @@ const user = {
   name: "Mark Sikaundi",
 };
 
-// const CreatePostScreen = () => {
-//     const [description, setDescription] = useState("");
-
-//     const onPost = () => {
-//       console.warn("Posting: ", description);
-//       setDescription("");
-//     };
-// }
-
 const CreatePostScreen = () => {
   const [description, setDescription] = useState("");
 
