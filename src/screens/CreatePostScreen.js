@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, Image } from "react-native";
+import { Text, StyleSheet, View, Image, TextInput, Button } from "react-native";
 
 const user = {
   id: "u1",
@@ -7,13 +7,28 @@ const user = {
   name: "Mark Sikaundi",
 };
 
+// const CreatePostScreen = () => {
+//     const [description, setDescription] = useState("");
+
+//     const onPost = () => {
+//       console.warn("Posting: ", description);
+//       setDescription("");
+//     };
+// }
+
 const CreatePostScreen = () => {
+  const onSubmit = () => {
+    console.log("On submit");
+  };
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Image source={{ uri: user.image }} style={styles.image} />
         <Text style={styles.name}>{user.name}</Text>
       </View>
+
+      <TextInput placeholder="What's on your mind?" multiline />
+      <Button title="Post" onPress={onSubmit} />
     </View>
   );
 };
@@ -31,6 +46,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     width: "100%",
+    marginBottom: 10,
   },
   image: {
     height: 40,
