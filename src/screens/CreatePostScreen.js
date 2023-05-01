@@ -1,5 +1,19 @@
 import { useState } from "react";
 import { View, Text, StyleSheet, TextInput, Image, Button } from "react-native";
+import { KeyboardAvoidingView } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+
+const insets = useSafeAreaInsets();
+
+<KeyboardAvoidingView
+  behavior={Platform.OS === "ios" ? "padding" : "height"}
+  style={[styles.container, { marginBottom: insets.bottom }]}
+  contentContainerStyle={{ flex: 1 }}
+  keyboardVerticalOffset={150}
+>
+
+...
+</KeyboardAvoidingView>
 
 const user = {
   id: "u1",

@@ -1,5 +1,6 @@
 import { FlatList } from "react-native";
 import posts from "../../assets/data/posts.json";
+import FeedPost from "../components/FeedPost";
 
 const FeedScreen = () => {
   return (
