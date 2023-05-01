@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Text, StyleSheet, View, Image, TextInput, Button } from "react-native";
 
 const user = {
@@ -17,6 +18,13 @@ const user = {
 // }
 
 const CreatePostScreen = () => {
+  const [description, setDescription] = useState("");
+
+  const onPost = () => {
+    console.warn("Posting: ", description);
+    setDescription("");
+  };
+
   const onSubmit = () => {
     console.log("On submit");
   };
