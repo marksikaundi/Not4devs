@@ -9,7 +9,7 @@ export default function App() {
       
       <FlatList 
       data={posts}
-      renderItem={({item}) => <FlatList post={item}/>}
+      renderItem={({item}) => <FeedPost post={item}/>}
       />
     </View>
   );
