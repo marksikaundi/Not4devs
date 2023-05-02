@@ -8,6 +8,7 @@ const user = {
   name: "Mark Sikaundi",
 };
 
+//states
 const CreatePostScreen = () => {
   const [description, setDescription] = useState("");
 
